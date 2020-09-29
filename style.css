@@ -1,0 +1,16 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 960px;
+    margin: 50px auto;
+}
+
+.result-form span {
+    color: red;
+    border: solid 2px red;
+    font-size: 20px;
+}

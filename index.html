@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="container">
+
+            <h1>Currency Converter</h1>
+            
+            <form id="myForm">
+                <div>
+                    <label for="Base Currency" id="baseCurrencyLabel">From</label>
+                    <select class="form-control" id="select">
+                        <option id ="usd" value="USD">USD</option>
+                        <option id ="chf"value ="CHF">CHF</option>
+                        <option id ="eur"value ="EUR">EUR</option>
+                    </select>
+                    <br>
+                    <label for="amount" id="baseCurrencyAmountLabel">Amount</label>
+                    <input type="number" class="form-control" id="amountToCount" value="1"></input>
+                    <br>
+                    <div>
+                        <label for="Target Currency">To: </label>
+                        <select class="form-control" id="target">
+                            <option>PLN</option>
+                        </select>
+                    </div>
+                    <br>
+                    <input type="button" value="Convert!" onclick="onConvertBtnClick()">
+                </div>
+                <br>
+                <form class="result-form">
+                    <span id="result"></span>
+                </form>
+
+            </form>
+        </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="api.js"></script>
+    </body>
+</html>
