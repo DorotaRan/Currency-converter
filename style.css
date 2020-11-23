@@ -7,9 +7,11 @@
 body {
     width: 960px;
     margin: 50px auto;
+    background-color: rgb(22, 22, 63);
+    color: white;
 }
 
-.result-form span {
+.result {
     color: red;
     border: solid 2px red;
     font-size: 20px;
